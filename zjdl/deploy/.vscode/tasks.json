@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+        "type": "shell",
+        "label": "task g++",
+        "command": "D:\\Software\\mingw64\\bin\\g++.exe",
+        "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "-I",
+            "..",
+            "-std=c++17"
+        ],
+        "options": {
+            "cwd": "D:\\Software\\mingw64\\bin"
+        },
+        "problemMatcher":[
+            "$gcc"
+        ],
+        "group": "build"
+
+        }
+    ]
+}
+
